@@ -89,8 +89,10 @@ def movies_with_directors_set(source)
   total_movies = []
   index = 0
   while index < source.length do
-    total_movies << movies_with_director_key(source[index][:name],source[index][:movies])
-    
+    total_movies << movies_with_director_key(source[index][:name], source[index][:movies])
+    index += 1
+  end
+  total_movies  
 end
 
 # ----------------    End of Your Code Region --------------------
